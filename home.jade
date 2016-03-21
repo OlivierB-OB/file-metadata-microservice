@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title Olivier BERNARD's File Metadata Microservice
+  body
+    h1 Olivier BERNARD's File Metadata Microservice
+    form(action="/", method="post", enctype="multipart/form-data")
+        input(type="file", name="metafile")
+        input(type="submit", value="Get Size")
+    if fileSize
+        p File size: <strong>#{fileSize}</strong> bytes
